@@ -1,0 +1,17 @@
+{
+  "author": "Sam Holmes (http://github.com/samholmes)",
+  "name": "xi",
+  "description": "Coming soon.",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samholmes/xi"
+  },
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
