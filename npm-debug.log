@@ -1,0 +1,103 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@3.9.5
+3 info using node@v6.2.2
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/holmes/Code/github/xi',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/holmes/.npm/xi/0.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/holmes/.npm correctMkdir not in flight; initializing
+10 info lifecycle xi@0.0.0~prepublish: xi@0.0.0
+11 silly lifecycle xi@0.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/holmes/.npm/xi/0.0.0/package.tgz',
+12 verbose tar pack   '/Users/holmes/Code/github/xi' ]
+13 verbose tarball /Users/holmes/.npm/xi/0.0.0/package.tgz
+14 verbose folder /Users/holmes/Code/github/xi
+15 verbose addLocalTarball adding from inside cache /Users/holmes/.npm/xi/0.0.0/package.tgz
+16 verbose correctMkdir /Users/holmes/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd xi@0.0.0
+18 verbose afterAdd /Users/holmes/.npm/xi/0.0.0/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/holmes/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/holmes/.npm/xi/0.0.0/package/package.json written
+21 silly publish { author: { name: 'Sam Holmes', url: 'http://github.com/samholmes' },
+21 silly publish   name: 'xi',
+21 silly publish   description: 'Coming soon.',
+21 silly publish   version: '0.0.0',
+21 silly publish   repository: { type: 'git', url: 'https://github.com/samholmes/xi' },
+21 silly publish   main: 'index.js',
+21 silly publish   dependencies: {},
+21 silly publish   devDependencies: {},
+21 silly publish   optionalDependencies: {},
+21 silly publish   engines: { node: '*' },
+21 silly publish   readme: '# XI\n\nXI is a lightweight CMS system built on top of Express.\n\nXI provides a simple, developer-designed interface for clients. This enables web developers to focus on developing \nsolutions for their client without destracting the client and their business.\n\n## Instal\n\n```\nnpm install --save xi\n```\n\n## Use\n\n```js\nvar xi = require(\'xi\');\nvar express = require(\'express\');\nvar app = express();\n\napp.use(xi());\n```\n\nThe XI middleware will mount the CMS at `/admin`.\n\n### Note\n\nDevelopment for XI is still underway. Expect updates soon.\n\n# Licence\n\n(The MIT License)\n\nCopyright (c) 2012 Sam Holmes @sam_holmes\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\'Software\'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \'AS IS\', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: 'bde41eb0005c9eec55d43e0e0c886a04364b906b',
+21 silly publish   bugs: { url: 'https://github.com/samholmes/xi/issues' },
+21 silly publish   homepage: 'https://github.com/samholmes/xi',
+21 silly publish   _id: 'xi@0.0.0',
+21 silly publish   scripts: {},
+21 silly publish   _shasum: 'af8ce79f08373c416ee7e1549e8b49e7fce351b7',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name xi
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'xi',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   name: 'xi',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/xi
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /Users/holmes/.npm/xi/0.0.0/package.tgz
+30 verbose request uri https://registry.npmjs.org/xi
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 4:45:48 PM
+33 verbose request id 2c52686795efd103
+34 http request PUT https://registry.npmjs.org/xi
+35 http 403 https://registry.npmjs.org/xi
+36 verbose headers { 'content-type': 'application/json',
+36 verbose headers   'cache-control': 'max-age=300',
+36 verbose headers   'content-length': '95',
+36 verbose headers   'accept-ranges': 'bytes',
+36 verbose headers   date: 'Sun, 13 Nov 2016 00:45:49 GMT',
+36 verbose headers   via: '1.1 varnish',
+36 verbose headers   connection: 'keep-alive',
+36 verbose headers   'x-served-by': 'cache-sjc3131-SJC',
+36 verbose headers   'x-cache': 'MISS',
+36 verbose headers   'x-cache-hits': '0',
+36 verbose headers   'x-timer': 'S1478997949.443774,VS0,VE160' }
+37 verbose request invalidating /Users/holmes/.npm/registry.npmjs.org/xi on PUT
+38 error publish Failed PUT 403
+39 verbose stack Error: "You cannot publish over the previously published version 0.0.0." : xi
+39 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+39 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+39 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+39 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:200:22)
+39 verbose stack     at emitTwo (events.js:106:13)
+39 verbose stack     at Request.emit (events.js:191:7)
+39 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+39 verbose stack     at emitOne (events.js:101:20)
+39 verbose stack     at Request.emit (events.js:188:7)
+39 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:988:12)
+40 verbose statusCode 403
+41 verbose pkgid xi
+42 verbose cwd /Users/holmes/Code/github/xi
+43 error Darwin 15.6.0
+44 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+45 error node v6.2.2
+46 error npm  v3.9.5
+47 error code E403
+48 error "You cannot publish over the previously published version 0.0.0." : xi
+49 error If you need help, you may report this error at:
+49 error     <https://github.com/npm/npm/issues>
+50 verbose exit [ 1, true ]
