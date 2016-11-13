@@ -1,4 +1,31 @@
-# Coming Soon
+# XI
+
+XI is a lightweight CMS system built on top of Express.
+
+XI provides a simple, developer-designed interface for clients. This enables web developers to focus on developing 
+solutions for their client without destracting the client and their business.
+
+## Instal
+
+```
+npm install --save xi
+```
+
+## Use
+
+```js
+var xi = require('xi');
+var express = require('express');
+var app = express();
+
+app.use(xi());
+```
+
+The XI middleware will mount the CMS at `/admin`.
+
+### Note
+
+Development for XI is still underway. Expect updates soon.
 
 # Licence
 
